@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Коллекция Calibre 01 — LUMEN</title>
+<meta name="description" content="Коллекция LUMEN Calibre 01: четыре исполнения автоматических часов — фильтр по металлу корпуса и сортировка по цене.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2310182e' stroke='%23c9a24a' stroke-width='3'/%3E%3Cpath d='M16 8v8l5 3' stroke='%23f1d796' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/site.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/addons/" } }
+</script>
+</head>
+<body data-page="catalog">
+<div class="site-bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grid"></div></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">LUMEN</a>
+    <nav class="links">
+      <a href="catalog.html" aria-current="page">Коллекция</a>
+      <a href="product.html?m=calibre-01-midnight" class="gold">✦ Calibre 01 в 3D</a>
+      <a href="index.html#service">Сервис</a>
+    </nav>
+    <a class="btn primary small" href="product.html?m=calibre-01-midnight#order">Оставить заявку</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="kicker">Коллекция</div>
+    <h1 class="disp">Calibre 01</h1>
+    <p>Один автоматический калибр в четырёх исполнениях. Часы живые — наведите на карточку, и они приоткроют механизм.</p>
+  </div>
+
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Металл корпуса">
+      <button class="chip active" data-metal="all">Все</button>
+      <button class="chip" data-metal="steel">Сталь</button>
+      <button class="chip" data-metal="gold">Золотой тон</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px">
+      <span class="count" id="catalog-count"></span>
+      <select class="select" id="catalog-sort" aria-label="Сортировка">
+        <option value="default">По умолчанию</option>
+        <option value="asc">Сначала дешевле</option>
+        <option value="desc">Сначала дороже</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="cards" id="catalog-grid" style="margin-bottom:110px"></div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>LUMEN — демо-сайт для портфолио: бренд, модели и цены вымышлены, заказы не принимаются</span>
+    <span>Все изображения часов — рендер 3D-модели, собранной кодом · <a href="https://t.me/VladisavSSS" target="_blank" rel="noopener" style="color:var(--accent)">Хотите такой же сайт? Telegram →</a></span>
+  </div>
+</footer>
+
+<script type="module" src="js/site.js"></script>
+</body>
+</html>

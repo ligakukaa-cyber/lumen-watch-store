@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMEN — механические часы Calibre 01</title>
+<meta name="description" content="LUMEN — демо-сайт часового бренда: коллекция Calibre 01 в четырёх исполнениях, флагман можно разобрать в живом 3D прямо на сайте.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2310182e' stroke='%23c9a24a' stroke-width='3'/%3E%3Cpath d='M16 8v8l5 3' stroke='%23f1d796' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/site.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/addons/" } }
+</script>
+</head>
+<body data-page="home">
+<div class="site-bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grid"></div></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">LUMEN</a>
+    <nav class="links">
+      <a href="catalog.html">Коллекция</a>
+      <a href="product.html?m=calibre-01-midnight" class="gold">✦ Calibre 01 в 3D</a>
+      <a href="#service">Сервис</a>
+    </nav>
+    <a class="btn primary small" href="catalog.html">Выбрать часы</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="kicker reveal">Коллекция Calibre 01 · автоматический механизм</div>
+        <h1 class="disp reveal">Время,<span class="grad">которое видно</span></h1>
+        <p class="sub reveal">Четыре исполнения одного калибра: сапфир с двух сторон, автоподзавод
+          и механизм, который можно рассмотреть через заднюю крышку — или разобрать прямо на сайте.</p>
+        <div class="actions reveal">
+          <a class="btn primary" href="catalog.html">Смотреть коллекцию</a>
+          <a class="btn ghost" href="product.html?m=calibre-01-midnight#explode">Разобрать в 3D ✦</a>
+        </div>
+        <div class="facts reveal">
+          <div><b>21</b><span>камень в механизме</span></div>
+          <div><b>42 ч</b><span>запас хода</span></div>
+          <div><b>100 м</b><span>водозащита</span></div>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <svg class="rings" viewBox="0 0 800 800" aria-hidden="true">
+          <circle class="r1" cx="400" cy="400" r="388"/>
+          <circle class="r2" cx="400" cy="400" r="352"/>
+          <circle class="r3" cx="400" cy="400" r="300"/>
+        </svg>
+        <img src="assets/midnight-angle.jpg" alt="LUMEN Calibre 01 Midnight">
+        <div class="watch3d" data-watch3d data-variant="midnight" data-mode="hero" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="collection">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">Коллекция</div>
+          <h2 class="disp">Один калибр —<br>четыре характера</h2>
+        </div>
+        <p>Часы живые: механизм идёт, стрелки показывают ваше время. Наведите на карточку — они приоткроются.</p>
+      </div>
+      <div class="cards" id="home-cards"></div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="premium-band reveal">
+        <div class="pb-media"><img src="assets/midnight-back.jpg" alt="Механизм Calibre 01 через сапфировую крышку" loading="lazy"><div class="watch3d" data-watch3d data-variant="midnight" data-mode="back" aria-hidden="true"></div></div>
+        <div class="pb-copy">
+          <div class="kicker">Премиум · живой 3D</div>
+          <h2 class="disp">Разберите Calibre 01<br>до последнего винта</h2>
+          <p>На странице флагмана часы не на фото, а в живом 3D: прокрутите — и они разойдутся на
+            11 слоёв с подписями, а механизм продолжит идти.</p>
+          <ul>
+            <li>Колёса в зацеплении и баланс, который тикает в такт</li>
+            <li>Стрелки показывают ваше текущее время</li>
+            <li>Работает в браузере на телефоне и компьютере</li>
+          </ul>
+          <a class="btn primary" href="product.html?m=calibre-01-midnight#explode">Открыть 3D-разборку ✦</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="service" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">Сервис</div>
+          <h2 class="disp">Покупка без риска</h2>
+        </div>
+      </div>
+      <div class="features reveal">
+        <div class="feature"><div class="num">01</div><h3>Примерка перед оплатой</h3><p>Курьер привезёт часы — платите, только если подошли.</p></div>
+        <div class="feature"><div class="num">02</div><h3>Доставка по России</h3><p>Бесплатно, в защищённой упаковке и со страховкой.</p></div>
+        <div class="feature"><div class="num">03</div><h3>Гарантия 2 года</h3><p>Обслуживание механизма и замена стекла по гарантии.</p></div>
+        <div class="feature"><div class="num">04</div><h3>Возврат 14 дней</h3><p>Не понравились — вернём деньги без вопросов.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>LUMEN — демо-сайт для портфолио: бренд, модели и цены вымышлены, заказы не принимаются</span>
+    <span>Все изображения часов — рендер 3D-модели, собранной кодом · <a href="https://t.me/VladisavSSS" target="_blank" rel="noopener" style="color:var(--accent)">Хотите такой же сайт? Telegram →</a></span>
+  </div>
+</footer>
+
+<script type="module" src="js/site.js"></script>
+</body>
+</html>

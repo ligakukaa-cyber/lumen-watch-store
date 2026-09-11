@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMEN Calibre 01</title>
+<meta name="description" content="Карточка часов LUMEN Calibre 01: галерея, характеристики, заявка на покупку. Флагман Midnight — с живой 3D-разборкой.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2310182e' stroke='%23c9a24a' stroke-width='3'/%3E%3Cpath d='M16 8v8l5 3' stroke='%23f1d796' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/stage.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/addons/" } }
+</script>
+</head>
+<body data-page="product">
+<div class="site-bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grid"></div></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">LUMEN</a>
+    <nav class="links">
+      <a href="catalog.html">Коллекция</a>
+      <a href="product.html?m=calibre-01-midnight" class="gold">✦ Calibre 01 в 3D</a>
+      <a href="index.html#service">Сервис</a>
+    </nav>
+    <a class="btn primary small" href="#order">Оставить заявку</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap crumbs"><a href="index.html">Главная</a> / <a href="catalog.html">Коллекция</a> / <span id="crumb-title"></span></div>
+
+  <section class="wrap pdp">
+    <div class="gallery">
+      <div class="gallery-main"><img id="g-main" src="" alt=""><div class="watch3d" id="g-3d" data-watch3d data-mode="turntable" aria-hidden="true"></div></div>
+      <div class="thumbs" id="g-thumbs"></div>
+    </div>
+    <div class="info">
+      <div class="pdp-badges" id="p-badges"></div>
+      <h1 class="disp" id="p-title"></h1>
+      <p class="tagline" id="p-tagline"></p>
+      <div class="price" id="p-price"></div>
+      <div class="swatch-row"><span class="swatch-label">Исполнение</span><div class="swatches" id="p-swatches"></div></div>
+      <div class="pdp-actions">
+        <a class="btn primary" href="#order">Оставить заявку</a>
+        <a class="btn ghost" id="p-3d-link" href="#explode" hidden>Разобрать в 3D ✦</a>
+      </div>
+      <ul class="perks">
+        <li>Бесплатная доставка по России</li>
+        <li>Примерка перед оплатой</li>
+        <li>Гарантия 2 года, возврат 14 дней</li>
+      </ul>
+      <table class="specs" id="p-specs"></table>
+    </div>
+  </section>
+
+  <!-- Премиум: живая 3D-разборка (включается только у флагмана) -->
+  <section class="explode" id="explode" hidden>
+    <div class="stage">
+      <div class="hero-bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="grid-overlay"></div></div>
+      <canvas id="watch-canvas" aria-label="3D-модель часов LUMEN Calibre 01"></canvas>
+      <div id="part-labels" aria-hidden="true"></div>
+      <div class="fallback">Ваш браузер не поддерживает WebGL — 3D-разборка недоступна.</div>
+      <div class="stage-copy intro">
+        <div class="eyebrow">Премиум · живой 3D</div>
+        <h2 class="disp" style="font-size:clamp(42px,6.4vw,100px)">Разберите<span class="grad" style="display:block;background:linear-gradient(100deg,var(--accent),#f1d796,var(--accent));background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent">Calibre 01</span></h2>
+        <p class="sub">Это не фото и не видео: часы собраны в 3D и идут прямо сейчас. Прокрутите —
+          и они разойдутся на детали.</p>
+        <div class="hint"><span class="bar"></span>Прокрутите или тяните ползунок</div>
+      </div>
+      <div class="stage-copy outro">
+        <h2 class="disp">11 слоёв,<br>21 камень</h2>
+        <p>Всё, за что вы платите, — видно. Соберите обратно ползунком внизу.</p>
+      </div>
+      <label class="assembly">
+        <span>Собрано</span>
+        <input type="range" id="explode-range" min="0" max="1000" value="0" aria-label="Степень разборки часов">
+        <span>Разобрано</span>
+        <output id="explode-value">0%</output>
+      </label>
+    </div>
+  </section>
+
+  <section class="wrap" id="banner-3d" hidden>
+    <div class="banner-3d">
+      <div>
+        <h3>Хотите увидеть механизм изнутри?</h3>
+        <p>Флагман Calibre 01 Midnight можно разобрать в живом 3D — механизм у всех исполнений один.</p>
+      </div>
+      <a class="btn ghost" href="product.html?m=calibre-01-midnight#explode">Разобрать в 3D ✦</a>
+    </div>
+  </section>
+
+  <section class="wrap order" id="order">
+    <div class="order-box">
+      <div>
+        <div class="kicker">Заявка</div>
+        <h2 class="disp">Оставьте заявку —<br>привезём на примерку</h2>
+        <p class="lead">Менеджер свяжется в течение часа, подтвердит наличие и согласует
+          доставку. Оплата — только после примерки.</p>
+      </div>
+      <form class="form" id="order-form" novalidate>
+        <div class="field"><label for="f-name">Имя</label><input id="f-name" autocomplete="name" placeholder="Как к вам обращаться"><div class="err" id="err-name"></div></div>
+        <div class="field"><label for="f-contact">Телефон или Telegram</label><input id="f-contact" autocomplete="tel" placeholder="+7 900 000-00-00 или @username"><div class="err" id="err-contact"></div></div>
+        <div class="field"><label for="f-model">Модель</label><select id="f-model"></select><div class="err" id="err-model"></div></div>
+        <div class="field"><label for="f-comment">Комментарий <span class="muted">(необязательно)</span></label><textarea id="f-comment" placeholder="Удобное время звонка, город доставки"></textarea></div>
+        <button class="btn primary" type="submit">Отправить заявку</button>
+        <div class="form-note" id="form-note" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:110px">
+    <div class="section-head"><div><div class="kicker">Коллекция</div><h2 class="disp">Другие исполнения</h2></div></div>
+    <div class="cards" id="more-cards"></div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>LUMEN — демо-сайт для портфолио: бренд, модели и цены вымышлены, заказы не принимаются</span>
+    <span>Все изображения часов — рендер 3D-модели, собранной кодом · <a href="https://t.me/VladisavSSS" target="_blank" rel="noopener" style="color:var(--accent)">Хотите такой же сайт? Telegram →</a></span>
+  </div>
+</footer>
+
+<script type="module" src="js/site.js"></script>
+</body>
+</html>
